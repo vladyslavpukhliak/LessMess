@@ -1,0 +1,36 @@
+{
+    "extension":{
+        "picture":["jpg", "png", "svg", "tif", "jpeg", "jfif", "webp", "tiff",
+                "gif", "bmp", "dib", "ico", "icns", "bw", "cdr", "cmx"],
+
+        "video":["mp4", "mov", "m4v", "asf", "avi",
+             "wmv", "m2ts", "3g2", "3gp2", "3gpp", "mpg", "mpeg", "webm"],
+
+        "audio":["mp3", "wav", "m4a", "wma", "aac", "au", "mp2"],
+
+        "archive":["exe", "msi", "zip", "rar", "7z", "iso", "bat",
+           "bin", "apk", "ipa", "dmg", "pkg", "deb", "torrent", "jar", "tar", "zipx", "xar"],
+
+        "document":["txt", "docx", "doc", "dot", "docm", "dotx", "dotm", "odt", "ott", "oth", "odm", "wpd", "pdb", "ini", "pdf", "csv", "md", "rtf", "mdb",
+           "accdb", "pub", "psd", "xml", "xlsx", "xlw", "xlt", "xlsb", "xlsm", "xltm", "ods", "ots", "fods", "sxc", "stc"],
+
+        "presentation":["ppt", "pot", "pptx", "pptm", "potx", "potm",
+                     "odp", "odg", "otp", "fopd", "sxi", "sti", "uop", "uof", "cgm", "key"]
+    },
+
+    "path":{
+        "track":"~/Downloads",
+
+        "pictures":"~/Pictures",
+
+        "videos":"~/Videos",
+
+        "audio":"~/Music",
+
+        "archives":"~/Downloads/Archives",
+
+        "documents":"~/Documents",
+
+        "presentations":"~/Downloads/Presentations"
+    }
+}
