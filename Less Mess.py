@@ -1,9 +1,11 @@
 import os
+import sys
 import json
 
 
-configuration = open('./parameters.json')
-data = json.load(configuration)
+cwd = os.path.dirname(sys.executable)
+configuration = os.path.join(cwd, 'parameters.json')
+data = json.load(open(configuration))
 
 folders = []
 for dirPath in data['path']:
@@ -29,4 +31,4 @@ def handle():
 
 
 handle()
-configuration.close()
+# configuration.close()
