@@ -3,7 +3,7 @@
         "picture":["jpg", "png", "svg", "tif", "jpeg", "jfif", "webp", "tiff",
                 "gif", "bmp", "dib", "ico", "icns", "bw", "cdr", "cmx"],
 
-        "video":["mp4", "mov", "m4v", "asf", "avi",
+        "video":["mp4", "mkv", "mov", "m4v", "asf", "avi",
              "wmv", "m2ts", "3g2", "3gp2", "3gpp", "mpg", "mpeg", "webm"],
 
         "audio":["mp3", "wav", "m4a", "wma", "aac", "au", "mp2"],
