@@ -4,8 +4,8 @@ import sys
 from GUI import MessageBoxUtils
 
 def load_configuration():
-    # cwd = sys.executable
-    cwd = 'C:/Users/AdminPC/Downloads'
+    cwd = sys.executable
+    # cwd = 'C:/Users/user/Downloads'
     configuration = cwd + '/' + 'parameters.json'
     with open(configuration, 'r') as config:
         return json.load(config)
