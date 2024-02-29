@@ -1,32 +1,65 @@
+import json
 import os
 import sys
-import json
+from GUI import MessageBoxUtils
 
-cwd = os.path.dirname(sys.executable)
-configuration = os.path.join(cwd, 'parameters.json')
-data = json.load(open(configuration))
-
-folders = []
-for dirPath in data['path']:
-    path = os.path.expanduser(data['path'][dirPath])
-
-    if not os.path.exists(path):
-        os.mkdir(path)
-    folders.append(path)
-
-track = folders[0]
+def load_configuration():
+    # cwd = sys.executable
+    cwd = 'C:/Users/AdminPC/Downloads'
+    configuration = cwd + '/' + 'parameters.json'
+    with open(configuration, 'r') as config:
+        return json.load(config)
 
 
-def handle():
-    for filename in os.listdir(track):
-        extension = filename.split('.')
-        if len(extension) > 1:
-            file = track + '/' + filename
+def create_folders(data):
+    folders = []
+    for category_path in data['extension']:
+        dir_path = os.path.expanduser(category_path)
 
-            for index, name in enumerate(data['extension']):
-                if extension[-1].lower() in data['extension'][name]:
-                    new_path = folders[index + 1] + '/' + filename
-                    os.rename(file, new_path)
+        if not os.path.exists(dir_path):
+            os.mkdir(dir_path)
+        folders.append(dir_path)
+    return folders, os.path.expanduser(data['track'])
 
 
-handle()
+def check_files(files):
+    file_count = len(files)
+    if file_count > 0:
+        MessageBoxUtils.init()
+        if MessageBoxUtils.allowed_renaming(file_count):
+            for f in files:
+                extension = get_extension(f)
+                os.rename(f, f + '_duplicate.' + extension)
+            organise(folders, track)
+            MessageBoxUtils.show_success()
+
+        MessageBoxUtils.destroy()
+        
+
+
+def get_extension(file):
+    return file.split('.')[-1].lower()
+
+
+def organise(folders, track):
+    files_to_rename = []
+    files = os.listdir(track)
+    for filename in files:
+        extension = get_extension(filename)
+        if extension:
+            source = track + '/' + filename
+
+            for path, ext_list in enumerate(data['extension']):
+                if extension in data['extension'][ext_list]:
+                    new_path = folders[path] + '/' + filename
+                    if not os.path.exists(new_path):
+                        os.rename(source, new_path)
+                    else:
+                        files_to_rename.append(source)
+
+    check_files(files_to_rename)
+
+
+data = load_configuration()
+folders, track = create_folders(data)
+organise(folders, track)
