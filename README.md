@@ -104,5 +104,5 @@ Less Mess — це сортувальник файлів за їхнім роз�
 
 ## Використані джерела
 
-- [Auto-Py-To-Exe + PyInstaller](https://pypi.org/project/auto-py-to-exe/) — Компілятор Python коду в єдиний виконуваний файл (.exe).
+- [Auto-Py-To-Exe & PyInstaller](https://pypi.org/project/auto-py-to-exe/) — компілятор Python коду в єдиний виконуваний файл (.exe).
 - [Inno Setup](https://jrsoftware.org/isinfo.php) — система створення інсталяторів для Windows-програм з [відкритим вихідним кодом](https://github.com/jrsoftware/issrc).
