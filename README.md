@@ -7,15 +7,16 @@
 <a href="#завантажити">Завантажити</a> • 
 <a href="https://u24.gov.ua">Зробити внесок у відбудову України</a>
 </div>
-<!-- 
+
 <p align="center">
     <a href="https://github.com/vladyslavpukhliak/LessMess/releases/download/v1.0.0/LessMessInstaller.exe">
         <img src="https://img.shields.io/github/downloads/vladyslavpukhliak/lessmess/total.svg">
     </a>
-</p> -->
+</p>
 
 Це безкоштовне програмне забезпечення з відкритим вихідним кодом.  
-Ви можете **підтримати** мою працю, **зробивши внесок у відбудову шкіл та лікарень, облаштування бомбосховищ, розмінування України** на <a href="https://u24.gov.ua">платформі UNITED24</a>.
+Ви можете **підтримати** мою працю, **зробивши внесок у відбудову шкіл та лікарень, облаштування бомбосховищ, розмінування України** на <a href="https://u24.gov.ua">платформі UNITED24</a>,
+або долучившись до збору «Чисте небо» благодійного фонду Сергія Притули за посиланням: <a href="https://send.monobank.ua/jar/9eLrpTbe4Z">send.monobank.ua/jar/9eLrpTbe4Z</a>.
 
 ## Короткий опис
 <div align="center">
