@@ -10,7 +10,7 @@
 
 <p align="center">
     <a href="https://github.com/vladyslavpukhliak/LessMess/releases/download/v1.0.0/LessMessInstaller.exe">
-        <img src="https://img.shields.io/github/downloads/vladyslavpukhliak/lessmess/total.svg">
+        <img src="https://img.shields.io/github/downloads/vladyslavpukhliak/lessmess/total?style=for-the-badge">
     </a>
 </p>
 
